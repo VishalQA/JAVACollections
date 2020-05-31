@@ -1,5 +1,6 @@
 package listconcepts;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Linkedlist {
@@ -28,8 +29,13 @@ public class Linkedlist {
 		System.out.println("Contents of LinkedList ->"  +ll);
 		
 		System.out.println("Prin using for loop");
-		for(int n =0; n<ll.size();n++) {
-			System.out.println(ll.get(n));
+//		for(int n =0; n<ll.size();n++) {
+//			System.out.println(ll.get(n));
+//		}
+//		
+		Iterator<String> itr = ll.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
 		}
 		
 
